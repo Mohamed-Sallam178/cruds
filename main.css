@@ -1,0 +1,79 @@
+:root {
+  --main-color: #1e3e62;
+  --hover-color: #000;
+  --btn-color: #d85600ee;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "cairo", sans-serif;
+  background-color: #0b192c;
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+h1,
+h4 {
+  text-align: center;
+  color: #fff;
+}
+input {
+  width: 100%;
+  height: 40px;
+  margin: 4px 0;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 10px;
+  transition: all 0.3s;
+}
+input::placeholder {
+  color: #fff;
+}
+input:focus {
+  background-color: var(--hover-color);
+  border: 1px solid #dbdbdb;
+}
+.product-details {
+  display: flex;
+  align-items: center;
+}
+.product-details input {
+  width: 20%;
+  margin-right: 1rem;
+}
+button {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: var(--btn-color);
+  height: 40px;
+  border-radius: 20px;
+  margin: 4px 0;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+}
+.search-by {
+  display: flex;
+  justify-content: space-between;
+}
+.search-by button {
+  width: 43%;
+}
+small#total {
+  background: #6e0000;
+  padding: 5px 2px;
+  border-radius: 4px;
+}
+small#total::before {
+  content: "Total:";
+  height: 30px;
+  color: #fff;
+}
