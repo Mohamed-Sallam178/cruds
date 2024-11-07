@@ -1,0 +1,24 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lottie Animation</title>
+    <!-- Lottie library from a CDN -->
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-web"></script>
+  </head>
+  <body>
+    <canvas id="dotlottie-canvas"></canvas>
+
+    <!-- Your JavaScript code -->
+    <script>
+      import { DotLottie } from '@lottiefiles/dotlottie-web';
+
+      const dotLottie = new DotLottie({
+          autoplay: true,
+          loop: true,
+          canvas: document.querySelector('#dotlottie-canvas'),
+          src: "https://lottie.host/4db68bbd-31f6-4cd8-84eb-189de081159a/IGmMCqhzpt.lottie",
+      });
+    </script>
+  </body>
+</html>
